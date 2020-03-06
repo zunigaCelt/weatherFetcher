@@ -1,7 +1,7 @@
 import requests
 import json
 
-def fetch_locationData() :
+def locationData() :
     api_key = "d162193b8277fb5e968036cafad58144"
 
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
@@ -13,5 +13,7 @@ def fetch_locationData() :
     response = requests.get(complete_url)
 
     locationData = response.json()
+
+    print(locationData)
 
     return(locationData)
