@@ -16,4 +16,4 @@ def locationData() :
 
     print(locationData)
 
-    return(locationData)
+    return locationData
