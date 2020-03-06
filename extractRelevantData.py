@@ -16,5 +16,3 @@ def relevantData () :
     print(weatherData)
 
     return weatherData
-
-relevantData()
