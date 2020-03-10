@@ -1,9 +1,9 @@
 import fetchLocationData as fetch
 import pytemperature as temp
 
-def relevantData () :
+def relevantData (zipcode) :
 
-    locationData = fetch.locationData()
+    locationData = fetch.locationData(zipcode)
 
     weatherData = {}
 
@@ -13,6 +13,6 @@ def relevantData () :
     weatherData["maxTemp"] = temp.k2f(locationData["main"]["temp_max"])
     weatherData["minTemp"] = temp.k2f(locationData["main"]["temp_min"])
 
-    print(weatherData)
+    # print(weatherData)
 
     return weatherData
